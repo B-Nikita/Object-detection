@@ -1,3 +1,5 @@
+# YOLO(v3) object detector in Pytorch
+
 The aim behind implementing the algorithm from scratch is understanding each and every key aspect about
 how computations take place for machine to detect the object.
 
@@ -5,7 +7,8 @@ PyTorch has been used to implement an object detector based on YOLO v3,
 one of the faster object detection algorithms.
 
 --------------------------------------------------------------------------------
-YOLO stands for You Only Look Once. 
+**YOLO** stands for **You Only Look Once**
+
 It's an object detector that uses features learned by a deep convolutional neural network to detect an object.
 YOLO can only detect objects belonging to the classes present in the dataset used to train the network. 
 We will be using the official weight file for our detector. These weights have been obtained by training the 
@@ -40,5 +43,7 @@ some command line flags to allow some experimentation with various hyperparamter
 
 
 Thanks to Ayoosh Kathuriya for awesome blog.Checkout his blog on paperspace.
+
 Link : https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
+
 You can reach out to him on https://github.com/ayooshkathuria
