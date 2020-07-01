@@ -6,7 +6,7 @@ how computations take place for machine to detect the object.
 PyTorch has been used to implement an object detector based on YOLO v3, 
 one of the faster object detection algorithms.
 
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 **YOLO** stands for **You Only Look Once**
 
 It's an object detector that uses features learned by a deep convolutional neural network to detect an object.
@@ -14,7 +14,7 @@ YOLO can only detect objects belonging to the classes present in the dataset use
 We will be using the official weight file for our detector. These weights have been obtained by training the 
 network on COCO dataset, and therefore we can detect 80 object categories.
 
-darknet.py
+### darknet.py
 ==============
 Darknet is the name of the underlying architecture of YOLO. This file will contain the code that creates 
 the YOLO network. We will supplement it with a file called `util.py` which will contain the code for various 
@@ -24,17 +24,17 @@ Parsing the config file, and store every block as dictionary,
 Creating the building blocks for neural network layers
 Implementation of class Darknet includng the forward pass of the network
 
-yolov3.cfg
+### yolov3.cfg
 ==============
 Configuration file describes the layout of the network, block by block.
 
-util.py
+### util.py
 ===============
 Consisting helper function like transform the output of the network into detection predictions,writting results,
 Confidence thresholding,performing non-maximum supression(NMS),calculation IoU(Intersection over Union),Writting
  the prediction back to disk
  
-detector.py
+### detector.py
 ====================
 In this file, the input and the output pipelines of detector is 
 specified. This involves the reading images off the disk, making a prediction, using the prediction to 
