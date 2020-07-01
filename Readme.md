@@ -16,6 +16,7 @@ network on COCO dataset, and therefore we can detect 80 object categories.
 
 ### darknet.py
 ==============
+
 Darknet is the name of the underlying architecture of YOLO. This file will contain the code that creates 
 the YOLO network. We will supplement it with a file called `util.py` which will contain the code for various 
 helper functions. Save both of these files in your detector folder.
@@ -26,16 +27,19 @@ Implementation of class Darknet includng the forward pass of the network
 
 ### yolov3.cfg
 ==============
+
 Configuration file describes the layout of the network, block by block.
 
 ### util.py
 ===============
+
 Consisting helper function like transform the output of the network into detection predictions,writting results,
 Confidence thresholding,performing non-maximum supression(NMS),calculation IoU(Intersection over Union),Writting
  the prediction back to disk
  
 ### detector.py
 ====================
+
 In this file, the input and the output pipelines of detector is 
 specified. This involves the reading images off the disk, making a prediction, using the prediction to 
 draw bounding boxes on images, and then saving them to the disk.
